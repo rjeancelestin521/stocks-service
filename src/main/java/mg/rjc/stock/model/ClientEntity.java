@@ -5,8 +5,10 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.*;
-import java.util.Collection;
+import javax.persistence.Column;
+import javax.persistence.Embedded;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 
 @Entity
 @Table(name = "clients")
@@ -37,7 +39,4 @@ public class ClientEntity extends AbstractEntity {
 
     @Column(name = "id_entreprise")
     private Long idEntreprise;
-
-    @OneToMany(mappedBy = "client")
-    private Collection<CommandeClientEntity> commandeClients;
 }

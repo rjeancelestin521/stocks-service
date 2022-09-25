@@ -5,6 +5,7 @@ import lombok.Setter;
 
 @Setter
 @Getter
-public class RoleRequestDto {
-    private String roleName;
+public class UtilisateurSlimDto {
+    private Long id;
+    private String email;
 }

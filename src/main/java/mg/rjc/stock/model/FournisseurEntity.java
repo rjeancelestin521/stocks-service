@@ -38,6 +38,4 @@ public class FournisseurEntity extends AbstractEntity {
     @Column(name = "id_entreprise")
     private Long idEntreprise;
 
-    @OneToMany(mappedBy = "fournisseur")
-    private Collection<CommandeFournisseurEntity> commandeFournisseurs;
 }
